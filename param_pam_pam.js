@@ -1,5 +1,8 @@
 var express = require('express');
 
+/*
+Create an Express.js server that processes PUT '/message/:id' requests.
+*/
 var app = express();
 app.put('/message/:ID', function (req, res) {
     res.end(require('crypto')

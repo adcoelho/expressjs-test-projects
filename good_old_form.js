@@ -2,6 +2,10 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 
+/*
+Write a route ('/form') that processes HTML form input
+(<form><input name="str"/></form>) and prints backwards the str value.
+*/
 var app = express();
 
 app.use(express.static(path.join(__dirname, 'public')));
